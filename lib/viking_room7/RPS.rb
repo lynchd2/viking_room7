@@ -34,6 +34,7 @@ module VikingRoom7
     def who_won
       moves = compare
       players = [@player1.name, @player2.name]
+      puts players
       if moves.include?("r") && moves.include?("p")
         i = moves.index("p")
         return players[i]
