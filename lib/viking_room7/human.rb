@@ -1,4 +1,3 @@
-
 module VikingRoom7
   class Human < Player
 
