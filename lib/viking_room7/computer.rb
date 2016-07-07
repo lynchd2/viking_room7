@@ -5,5 +5,10 @@ module VikingRoom7
       @name = "computer"
     end
 
+    def get_hand
+      hand = %w{r,p,s}.sample
+      @hand = hand
+    end
+
   end
 end
