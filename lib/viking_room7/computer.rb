@@ -2,11 +2,11 @@ module VikingRoom7
   class Computer < Player
 
     def initialize
-      @name = "computer"
+      super("computer")
     end
 
     def get_hand
-      hand = %w{r,p,s}.sample
+      hand = ["r", 'p', 's'].sample
       @hand = hand
     end
 

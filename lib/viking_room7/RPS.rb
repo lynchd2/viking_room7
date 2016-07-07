@@ -19,20 +19,25 @@ module VikingRoom7
     end
 
     def play
-      until win?
+      loop do
+        compare
+        puts "#{@player1.name} #{@player1.hand}"
+        puts "#{@player2.name} #{@player2.hand}"
         who_won
+        puts "#{@player1.name} #{@player1.hand}"
+        puts "#{@player2.name} #{@player2.hand}"
+        break if win?
       end
+      display_winner
     end
 
     def compare
       @player1.get_hand
       @player2.get_hand
-      puts "compare"
-      [@player1.hand, @player2.hand]
     end
 
     def who_won
-      moves = compare
+      moves = [@player1.hand, @player2.hand]
       players = [@player1.name, @player2.name]
       puts players
       if moves.include?("r") && moves.include?("p")
@@ -47,14 +52,13 @@ module VikingRoom7
       end
     end
 
+    def display_winner
+      puts "someone wins!"
+      puts who_won
+    end
+
     def win?
-      if @player1.hand != @player2.hand
-        puts "someone wins!"
-        puts who_won
-        return true
-      else
-        return false
-      end
+      @player1.hand != @player2.hand
     end
 
 
