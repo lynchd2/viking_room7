@@ -1,8 +1,13 @@
-class Player
-  def initialize
-  end
+module VikingRoom7
+  class Player
+    attr_accessor :hand
 
-  def throw
-  end
+    def initialize(name)
+      @name = name
+    end
 
+    def throw
+    end
+
+  end
 end
