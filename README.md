@@ -1,8 +1,8 @@
 # VikingRoom7
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/viking_room7`. To experiment with that code, run `bin/console` for an interactive prompt.
+Authors: Leo and Dylan
 
-TODO: Delete this and the text above, and describe your gem
+This gem is a game called Rock, Paper and Scissors.
 
 ## Installation
 
@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use, install the gem using the instructions above.
+
+To play a game, enter an IRB session. In the session, type in "require 'viking_room7'." Instantiate a new object like so: rps = VikingRoom7::RPS.new. The game should start and you will be prompted with entering your name.
+
+Cheers!
 
 ## Development
 
