@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["leoahnn@gmail.com"]
 
   spec.summary       = %q{Rock Paper Scissors game}
-  spec.description   =
+  spec.description   =  ""
   spec.homepage      = "https://github.com/leosaysger/viking_room7.git"
   spec.license       = "MIT"
 
