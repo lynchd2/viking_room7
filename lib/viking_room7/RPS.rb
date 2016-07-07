@@ -21,11 +21,7 @@ module VikingRoom7
     def play
       loop do
         compare
-        puts "#{@player1.name} #{@player1.hand}"
-        puts "#{@player2.name} #{@player2.hand}"
         who_won
-        puts "#{@player1.name} #{@player1.hand}"
-        puts "#{@player2.name} #{@player2.hand}"
         break if win?
       end
       display_winner
@@ -39,7 +35,6 @@ module VikingRoom7
     def who_won
       moves = [@player1.hand, @player2.hand]
       players = [@player1.name, @player2.name]
-      puts players
       if moves.include?("r") && moves.include?("p")
         i = moves.index("p")
         return players[i]
@@ -53,8 +48,7 @@ module VikingRoom7
     end
 
     def display_winner
-      puts "someone wins!"
-      puts who_won
+      puts "#{who_won} wins!"
     end
 
     def win?
@@ -67,7 +61,4 @@ module VikingRoom7
       num = gets.chomp.to_i
     end
   end
-
-  rps = RPS.new
-  rps.play
 end

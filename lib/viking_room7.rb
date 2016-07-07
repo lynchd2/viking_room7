@@ -5,7 +5,9 @@ require "viking_room7/computer"
 require "viking_room7/RPS"
 
 module VikingRoom7
-  # Your code goes here...
+  def play_rps
+    RPS.new
+  end
 end
 
 
