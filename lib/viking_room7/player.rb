@@ -4,6 +4,7 @@ module VikingRoom7
 
     def initialize(name)
       @name = name
+      @hand = "r"
     end
 
     def throw
